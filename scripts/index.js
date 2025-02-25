@@ -1,65 +1,64 @@
-const elemProjects = document.getElementById('project_content')
+const elemProjects = document.getElementById('project_content');
 
 const createImage = (image, name) => {
-    const elemPicture = document.createElement('picture')
-    const elemImg = document.createElement('img')
-    elemImg.setAttribute('src', image)
-    elemImg.setAttribute('alt', name)
+    const elemPicture = document.createElement('picture');
+    const elemImg = document.createElement('img');
+    elemImg.setAttribute('src', image);
+    elemImg.setAttribute('alt', name);
 
-    elemPicture.appendChild(elemImg)
+    elemPicture.appendChild(elemImg);
 
-    return elemPicture
+    return elemPicture;
 }
 
 const createStrong = (projectName) => {
-    const elemStrong = document.createElement('strong')
-    elemStrong.innerText = projectName 
+    const elemStrong = document.createElement('strong');
+    elemStrong.innerText = projectName;
 
-    return elemStrong 
+    return elemStrong;
 }
 
 const createTags = (projectTags) => {
-    const elemTags = document.createElement('div')
-    elemTags.classList.add('tags') 
+    const elemTags = document.createElement('div');
+    elemTags.classList.add('tags');
     projectTags.forEach(tag => {
         if (tag) {
-            const elemTag = document.createElement('span')
-            elemTag.innerText = tag 
-            elemTags.appendChild(elemTag)
+            const elemTag = document.createElement('span');
+            elemTag.innerText = tag;
+            elemTags.appendChild(elemTag);
         }
-    })
-    return elemTags
+    });
+    return elemTags;
 }
 
-const createProject =(project) => {
-    const elemProject = document.createElement('a')
-            elemProject.setAttribute('href', project.link || '#')
-            elemProject.setAttribute('target', '_blank')
-            elemProject.classList.add('project')
+const createProject = (project, index) => {
+    const elemProject = document.createElement('a');
+    elemProject.setAttribute('href', project.link || '#');
+    elemProject.setAttribute('target', '_blank');
+    elemProject.classList.add('project');
 
-            // Adiciona picture
-            elemProject.appendChild(createImage(project.image, project.name))
+    // Configurações de animação AOS
+    elemProject.setAttribute('data-aos', 'zoom-in-up');
+    elemProject.setAttribute('data-aos-duration', '800');
+    elemProject.setAttribute('data-aos-easing', 'ease-in-out');
+    elemProject.setAttribute('data-aos-offset', '-100');
+    elemProject.setAttribute('data-aos-delay', 300 * (index +1));
 
-            // Adiciona strong 
-            elemProject.appendChild(createStrong(project.name))
+    // Adiciona o conteúdo ao projeto
+    elemProject.appendChild(createImage(project.image, project.name));
+    elemProject.appendChild(createStrong(project.name));
+    elemProject.appendChild(createTags(project.tags));
 
-            // Adiciona tags 
-            elemProject.appendChild(createTags(project.tags))
-
-
-            return elemProject
+    return elemProject;
 }
-
 
 const loadProjects = (projects) => {
     projects.forEach(project => {
-        if (project.name && project.image) { 
-            elemProjects.appendChild(createProject(project))
-        }
+        elemProjects.appendChild(createProject(project));
     });
 }
 
 fetch('./projects.json')
     .then(response => response.json())
     .then(loadProjects)
-    .catch(error => console.error('Erro ao carregar projetos:', error))
+    .catch(error => console.error('Erro ao carregar projetos:', error));

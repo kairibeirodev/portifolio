@@ -9,3 +9,23 @@
 
     margin-top: 12px;
 }
+
+.about p a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+.about p a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width: 1080) {
+    .about {
+        padding: 24px;
+    }
+    
+    .about p {
+        font-size: 14px;
+    }
+}
+

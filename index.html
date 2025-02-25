@@ -9,12 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/global.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Script AOS - Animações -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
     <div class="app">
 
-        <section class="card user">
+        <section class="card user" 
+        data-aos="fade-right"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out">    
         <picture>
             <img src="./assets/eu.jpg" alt="">
         </picture>
@@ -40,7 +45,12 @@
         </div>
         </section>
 
-        <section class="card about">
+        <section class="card about" 
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="1000">
+
             <h2 class="subtitle">Sobre</h2>
             <p>Me considero ágil e consistente em aprender uma nova tecnologia e alta adaptabilidade às mudanças, pronta para superar qualquer desafio!
                 Se eu pudesse me definir em 3 palavras, certamente seriam: otimista, perseverante e esforçada! :) </p>
@@ -48,7 +58,10 @@
                 <p>Eu não sou o seu desenvolvedor padrão. </p>
         </section>
 
-        <section class=" card projects">
+        <section class=" card projects"
+        data-aos="fade-up"
+        data-aos-duration="800"
+        data-aos-easing="ease-in-out"> 
             <h2 class="subtitle">Sobre</h2>
 
             <div id="project_content">
@@ -57,5 +70,10 @@
 
     </div>
     <script src="./scripts/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({ once: true })
+    </script>
 </body>
 </html>

@@ -82,3 +82,24 @@
     color: var(--link);
 }
 
+@media(max-width: 1080) {
+    .projects {
+        padding: 24px;
+    }
+
+    #project_content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 768) {
+    #project_content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project picture {
+        height: 180px;
+    }
+}
