@@ -22,5 +22,11 @@
       "image": "./assets/projeto-rgb.png",
       "tags": ["HTML", "CSS", "JavaScript"],
       "link": "https://kairibeirodev.github.io/animacao-animada/#"
+    },
+      {
+      "name": "Clone da empresa Blizzard.",
+      "image": "./assets/projeto-buzzard.png",
+      "tags": ["JavaScript & JSON", "Node NPM", "React","API do projeto","Vite"],
+      "link": "https://kairibeirodev.github.io/buzzard-project/"
     }
   ]
