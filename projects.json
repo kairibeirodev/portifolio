@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Projeto Finanças",
+      "image": "./assets/projeto-financas.png",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "link": "https://github.com/seu-perfil/projeto-financas"
+    },
+      {
+      "name": "UI Clone do Disney Plus",
+      "image": "./assets/projeto-disney.png",
+      "tags": ["HTML", "CSS", "JavaScript","API TMDB"],
+      "link": ""
+    },
+      {
+      "name": "Landing page marca Suzuki",
+      "image": "./assets/projeto-suzuki.png",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "link": ""
+    }
+  ]
