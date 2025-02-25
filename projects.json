@@ -1,9 +1,9 @@
 [
     {
-      "name": "Projeto Finanças",
+      "name": "Projeto Controle de Finanças",
       "image": "./assets/projeto-financas.png",
       "tags": ["HTML", "CSS", "JavaScript"],
-      "link": "https://github.com/seu-perfil/projeto-financas"
+      "link": "https://kairibeirodev.github.io/controle-financeiro/"
     },
       {
       "name": "UI Clone do Disney Plus",
@@ -13,8 +13,14 @@
     },
       {
       "name": "Landing page marca Suzuki",
-      "image": "./assets/projeto-suzuki.png",
+      "image": "https://kairibeirodev.github.io/suzuki-landingpage/",
       "tags": ["HTML", "CSS", "JavaScript"],
       "link": ""
+    }, 
+      {
+      "name": "Navegação Animada RGB",
+      "image": "./assets/projeto-rgb.png",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "link": "https://kairibeirodev.github.io/animacao-animada/#"
     }
   ]
