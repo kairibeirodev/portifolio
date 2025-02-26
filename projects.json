@@ -1,32 +1,44 @@
 [
-    {
-      "name": "Projeto Controle de Finanças",
-      "image": "./assets/projeto-financas.png",
-      "tags": ["HTML", "CSS", "JavaScript"],
-      "link": "https://kairibeirodev.github.io/controle-financeiro/"
-    },
-      {
-      "name": "UI Clone do Disney Plus",
-      "image": "./assets/projeto-disney.png",
-      "tags": ["HTML", "CSS", "JavaScript","API TMDB"],
-      "link": ""
-    },
-      {
-      "name": "Landing page marca Suzuki",
-      "image": "./assets/projeto-suzuki.png",
-      "tags": ["HTML", "CSS", "JavaScript"],
-      "link": "https://kairibeirodev.github.io/suzuki-landingpage/"
-    }, 
-      {
-      "name": "Navegação Animada RGB",
-      "image": "./assets/projeto-rgb.png",
-      "tags": ["HTML", "CSS", "JavaScript"],
-      "link": "https://kairibeirodev.github.io/animacao-animada/#"
-    },
-      {
-      "name": "Clone da empresa Blizzard.",
-      "image": "./assets/project-buzzard.png",
-      "tags": ["JavaScript & JSON", "Node NPM", "React","API do projeto","Vite"],
-      "link": "https://snazzy-cascaron-09ffa2.netlify.app"
-    }
-  ]
+  {
+    "name": "Projeto Controle de Finanças",
+    "image": "./assets/projeto-financas.png",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "link": "https://kairibeirodev.github.io/controle-financeiro/"
+  },
+  {
+    "name": "UI Clone do Disney Plus",
+    "image": "./assets/projeto-disney.png",
+    "tags": ["HTML", "CSS", "JavaScript", "API TMDB"],
+    "link": ""
+  },
+  {
+    "name": "Landing page marca Suzuki",
+    "image": "./assets/projeto-suzuki.png",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "link": "https://kairibeirodev.github.io/suzuki-landingpage/"
+  },
+  {
+    "name": "Navegação Animada RGB",
+    "image": "./assets/projeto-rgb.png",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "link": "https://kairibeirodev.github.io/animacao-animada/#"
+  },
+  {
+    "name": "Clone da empresa Blizzard.",
+    "image": "./assets/project-buzzard.png",
+    "tags": [
+      "JavaScript & JSON",
+      "Node NPM",
+      "React",
+      "API do projeto",
+      "Vite"
+    ],
+    "link": "https://snazzy-cascaron-09ffa2.netlify.app"
+  },
+  {
+    "name": "Projeto Empire Burguer",
+    "image": "./assets/project-empireburguer.png",
+    "tags": ["JavaScript", "Vue.js", "Swiper", "API do projeto"],
+    "link": "https://superlative-lollipop-760c7f.netlify.app/#cardapio"
+  }
+]
